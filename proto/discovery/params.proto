@@ -1,0 +1,12 @@
+syntax = "proto3";
+package discovery.discovery;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "discovery/x/discovery/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

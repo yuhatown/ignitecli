@@ -1,0 +1,14 @@
+syntax = "proto3";
+package discovery.discovery;
+
+import "gogoproto/gogo.proto";
+import "discovery/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "discovery/x/discovery/types";
+
+// GenesisState defines the discovery module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
